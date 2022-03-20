@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div align="center">
+        <h2>Encuesta</h2>
+        <form action="/register" method="POST" modelAttribute="client" onsubmit="return validateForm()">
+            Ayudanos a seguir creciendo. Completa todos los campos.
+            <br>
+            <label path="Nombre">Nombre completo</label>
+            <input path="Nombre" type="text" id="Nombre" name="Nombre">
+            <br>
+            <label>Correo electronico</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label>Sexo</label>
+            <input id="mujer" type="radio" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input id="hombre" type="radio" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+            <br>
+            <label for="pregunta">¿Por que le gusta ese producto?</label>
+            <br>
+            <textarea rows="5" cols="50" name="pregunta" id="pregunta"></textarea>
+            <br>
+            <label for="comentario">¿Que le gustaria mejorar del producto?</label>
+            <br>
+            <textarea rows="5" cols="50" name="comentario" id="comentario"></textarea>
+            <br>
+            <button>Enviar</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
